@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Public Transport Optimization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background-image: url("https://www.shutterstock.com/image-vector/abstract-business-image-background-illustration_169-600nw-2647734657.jpg");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 100% 200%;
+            color: #fff;
+        }
+
+        header {
+            background: #0a2540;
+            padding: 25px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            height: 200px;
+            border-radius: 18px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+            transition: transform 0.3s ease;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .content h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .content p {
+            margin-top: 10px;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        /* Background images for output boxes */
+        .traffic {
+            background-image: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d");
+        }
+
+        .routes {
+            background-image: url("https://images.unsplash.com/photo-1529070538774-1843cb3265df");
+        }
+
+        .fuel {
+            background-image: url("https://www.asme.org/getmedia/ce3dc8b0-3bc3-4b3e-9bff-81cf16063aab/The-Power-of-Dual-Fuel-Diesel-Engines_hero.jpg.aspx?width=460&height=360&ext=.jpg");
+        }
+
+        .environment {
+            background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #333;
+            font-size: 14px;
+        }
+        .bottom-info {
+            position: fixed;
+            bottom: 20px;
+            left: 10px;
+            right: 10px;
+            background: #6b6b6b;
+            padding: 14px 6px;
+            font-size: 14px;
+            border-radius: 19px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            opacity: 0.9;
+        }
+        .email-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .email-info img {
+        width: 16px;
+        height: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    Smart Public Transport Optimization – Output Dashboard
+</header>
+
+
+<div class="container">
+
+    <div class="card traffic">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Traffic Monitoring</h2>
+            <p>Real-time traffic data analysis to reduce congestion and improve bus arrival accuracy.</p>
+        </div>
+    </div>
+
+    <div class="card routes">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Route Optimization</h2>
+            <p>AI-based route planning for shorter travel time and improved passenger flow.</p>
+        </div>
+    </div>
+
+    <div class="card fuel">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Fuel Efficiency</h2>
+            <p>Optimized scheduling to reduce fuel consumption and operational cost.</p>
+        </div>
+    </div>
+
+    <div class="card environment">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Environmental Impact</h2>
+            <p>Lower emissions supporting sustainable and eco-friendly urban transport.</p>
+        </div>
+    </div>
+
+</div>
+<footer>
+    © Smart Transport System | Frontend Prototype
+</footer>
+<div class="bottom-info">
+    <span class="email-info">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="logo">
+        25al109@rmd.ac.in
+    </span>
+</div>
+
+
+</body>
+</html>
